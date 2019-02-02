@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/edt_name"
+        android:hint="Enter Name"
+        android:textColor="#000000"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <android.support.v7.widget.AppCompatEditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/edt_mail"
+        android:hint="Enter Email ID"
+        android:inputType="textEmailAddress"
+        android:textColor="#000000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <android.support.v7.widget.AppCompatEditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/edt_pwd"
+        android:inputType="textPassword"
+        android:hint="Enter Password"
+        android:textColor="#000000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:text="Gender :"
+        android:gravity="start"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:id="@+id/radio_grp"
+        android:gravity="start"
+        android:layout_gravity="start"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/radio_male"
+            android:text="Male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/radio_female"
+            android:text="Female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+    <android.support.v7.widget.AppCompatEditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/edt_about"
+        android:inputType="text"
+        android:hint="About"
+        android:textColor="#000000"
+        android:lines="3"
+        android:maxLines="5"
+        android:layout_width="match_parent"
+        android:layout_height="70dp" />
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/submit"
+        android:text="SUBMIT"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
